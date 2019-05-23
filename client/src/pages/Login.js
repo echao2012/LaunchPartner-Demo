@@ -23,7 +23,7 @@ class Login extends Component {
     if(this.state.loginUsername) {
       API.getUserByUsername(this.state.loginUsername)
         .then(res => {
-          cookies.set('user', res._id, { path: '/' });
+          cookies.set('user', res.data._id, { path: '/' });
           this.props.history.push("/dashboard");
         })
         .catch(err => console.log(err));
@@ -38,7 +38,7 @@ class Login extends Component {
         name: this.state.newName
       })
         .then(res => {
-          cookies.set('user', res._id, { path: '/' });
+          cookies.set('user', res.data._id, { path: '/' });
           this.props.history.push("/dashboard");
         })
         .catch(err => console.log(err));

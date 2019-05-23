@@ -1,0 +1,18 @@
+.profile-detail{
+  width: 40rem;
+}
+
+.profile-detail .card-title{
+  display: inline;
+}
+
+.profile-detail .btn{
+  float: right;
+}
+
+.profile-detail img{
+  display: block;
+  margin: 0 auto;
+  max-width: 35rem;
+  max-height: 20rem;
+}

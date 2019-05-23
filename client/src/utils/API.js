@@ -6,10 +6,10 @@ export default {
     return axios.get("/api/users");
   },
   // Gets a single user with the given id
-  getUser: function(id) {
+  getUserById: function(id) {
     return axios.get("/api/users/" + id);
   },
-  getProfile: function(username) {
+  getUserByUsername: function(username) {
     return axios.get("/api/users/profile", { "username": username });
   },
   saveUser: function(userData) {
