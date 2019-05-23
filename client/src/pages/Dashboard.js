@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 import API from "../utils/API";
 import Cookies from 'universal-cookie';
-import { ProfileDetail } from "../components/ProfileDetail"
+import { ProfileDetail } from "../components/Profile"
 const cookies = new Cookies();
 
 class Login extends Component {
   state = {
-
     username: "",
     name: "",
     description: "",

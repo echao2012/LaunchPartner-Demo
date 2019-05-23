@@ -28,7 +28,7 @@ class Login extends Component {
         })
         .catch(err => console.log(err));
     }
-  }
+  };
 
   handleNewUser = event => {
     event.preventDefault();
@@ -43,7 +43,7 @@ class Login extends Component {
         })
         .catch(err => console.log(err));
     }
-  }
+  };
 
   render() {
     return (
@@ -51,7 +51,7 @@ class Login extends Component {
         <div className="row justify-content-center">
           <div className="card mt-4" style={{ width: "30rem" }}>
             <div className="card-header">
-              Login
+              <h5 className="card-title">Login</h5>
             </div>
             <div className="card-body text-center">
               <form>
@@ -74,7 +74,7 @@ class Login extends Component {
         <div className="row justify-content-center">
           <div className="card mt-4" style={{ width: "30rem" }}>
             <div className="card-header">
-              New User
+            <h5 className="card-title">New User</h5>
             </div>
             <div className="card-body text-center">
               <form>
@@ -101,7 +101,7 @@ class Login extends Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
