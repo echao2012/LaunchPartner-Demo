@@ -1,6 +1,6 @@
 import React from "react";
 
-function Nav(props) {
+function Nav() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
       <a className="navbar-brand" href="/">LaunchPartner Demo</a>
@@ -9,10 +9,10 @@ function Nav(props) {
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
-          <li className={props.location === "/" ? "nav-item active" : "nav-item"}>
+          <li className="nav-item active">
             <a className="nav-link" href="/">Home</a>
           </li>
-          <li className={props.location === "/users" ? "nav-item active" : "nav-item"}>
+          <li className="nav-item active">
             <a className="nav-link" href="/users">Profiles</a>
           </li>
         </ul>

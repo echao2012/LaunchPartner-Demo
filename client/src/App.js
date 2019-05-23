@@ -5,11 +5,13 @@ import Dashboard from "./pages/Dashboard"
 import EditProfile from "./pages/EditProfile"
 import Profiles from "./pages/Profiles";
 import ProfileDetail from "./pages/ProfileDetail";
+import Nav from "./components/Nav";
 
 function App() {
   return (
     <Router>
       <div>
+        <Nav />
         <Switch>
           <Route exact path="/" component={Login} />
           <Route exact path="/dashboard" component={Dashboard} />
