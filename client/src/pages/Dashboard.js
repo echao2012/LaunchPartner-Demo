@@ -28,9 +28,9 @@ class Login extends Component {
     return (
       <div className="container">
         <div className="row justify-content-center">
-            <ProfileDetail
-              profileInfo={this.state}
-            />
+          <ProfileDetail
+            profileInfo={this.state}
+          />
         </div>
       </div>
     )

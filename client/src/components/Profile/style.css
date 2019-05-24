@@ -16,3 +16,18 @@
   max-width: 35rem;
   max-height: 20rem;
 }
+
+.profile-list-item img{
+  max-width: 5rem;
+  margin-right: 1rem;
+  object-fit: cover;
+  overflow: hidden;
+  height: 5rem; 
+  width : 5rem;
+}
+
+.profile-list-item a{
+  float: right;
+  height: 5rem;
+  line-height: 5rem;
+}

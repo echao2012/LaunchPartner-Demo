@@ -18,3 +18,13 @@ export function ProfileDetail(props) {
     </div>
   );
 }
+
+export function ProfileListItem(props) {
+  return (
+    <li className="list-group-item profile-list-item">
+      <img className="img-thumbnail" src={props.profileInfo.picture ? props.profileInfo.picture : "https://place-hold.it/400x300&text=Picture&fontsize=16"}></img>
+      {props.profileInfo.name}
+      <a href={"/users/" + props.profileInfo._id}>View Profile →</a>
+    </li>
+  )
+}
