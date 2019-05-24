@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import API from "../utils/API";
 import { ProfileListItem } from "../components/Profile"
 
-
 class Login extends Component {
   state = {
     profiles: []
