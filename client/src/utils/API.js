@@ -10,7 +10,9 @@ export default {
     return axios.get("/api/users/" + id);
   },
   getUserByUsername: function(username) {
-    return axios.get("/api/users/profile", { "username": username });
+    return axios.get("/api/users/profile", {
+      params: { "username": username }
+    });
   },
   saveUser: function(userData) {
     return axios.post("/api/users", userData);
