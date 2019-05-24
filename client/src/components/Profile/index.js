@@ -11,7 +11,7 @@ export function ProfileDetail(props) {
         </div>
       ) : null}
       <div className="card-body">
-        <img class="img-fluid mb-4" src={props.profileInfo.picture ? props.profileInfo.picture : "https://place-hold.it/400x300&text=Picture&fontsize=16"}></img>
+        <img className="img-fluid mb-4" src={props.profileInfo.picture ? props.profileInfo.picture : "https://place-hold.it/400x300&text=Picture&fontsize=16"}></img>
         <h5 className="card-title">Name: {props.profileInfo.name}</h5>
         <p className="card-text">Description of yourself: {props.profileInfo.description ? props.profileInfo.description : "None"}</p>
       </div>

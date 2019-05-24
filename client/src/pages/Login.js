@@ -11,6 +11,14 @@ class Login extends Component {
     newName: ""
   };
 
+  componentDidMount() {
+    const userId = cookies.get('user');
+    if(userId) {
+      // Login cookie found, redirect to dashboard
+      this.props.history.push("/dashboard");
+    }
+  }
+
   handleInputChange = event => {
     const { name, value } = event.target;
     this.setState({

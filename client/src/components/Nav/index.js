@@ -1,4 +1,6 @@
 import React from "react";
+import Cookies from 'universal-cookie';
+const cookies = new Cookies();
 
 function Nav() {
   return (
@@ -14,6 +16,9 @@ function Nav() {
           </li>
           <li className="nav-item active">
             <a className="nav-link" href="/users">Profiles</a>
+          </li>
+          <li className="nav-item active">
+            <a className="nav-link" onClick={() => cookies.remove('user')} href="/">Logout</a>
           </li>
         </ul>
       </div>
